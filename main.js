@@ -1,3 +1,28 @@
+// === TREZE LABS ANTI-CLONE & EASTER EGG ===
+(function() {
+    const signature = `
+    ████████╗██████╗ ███████╗███████╗███████╗    ██╗      █████╗ ██████╗ ███████╗
+    ╚══██╔══╝██╔══██╗██╔════╝╚══███╔╝██╔════╝    ██║     ██╔══██╗██╔══██╗██╔════╝
+       ██║   ██████╔╝█████╗    ███╔╝ █████╗      ██║     ███████║██████╔╝███████╗
+       ██║   ██╔══██╗██╔══╝   ███╔╝  ██╔══╝      ██║     ██╔══██║██╔══██╗╚════██║
+       ██║   ██║  ██║███████╗███████╗███████╗    ███████╗██║  ██║██████╔╝███████║
+       ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝    ╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝
+    `;
+    console.log("%c" + signature, "color: #38bdf8; font-weight: bold;");
+    console.log("%c⚠️ ALERTA DE PROPIEDAD INTELECTUAL", "color: #ef4444; font-size: 16px; font-weight: bold;");
+    
+    // Domain Lock (Anti-Clonación)
+    const allowedDomains = ["indra-studio-floral-web.vercel.app", "indra-studio-floral.com", "localhost", "127.0.0.1"];
+    const currentDomain = window.location.hostname;
+    
+    if (!allowedDomains.includes(currentDomain) && currentDomain !== "") {
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.innerHTML = '<div style="height:100vh; display:flex; align-items:center; justify-content:center; background:#0f172a; color:#ef4444; font-family:monospace; font-size: 2rem;text-align:center;">🚨 ACCESO DENEGADO<br>VIOLACIÓN DE PROPIEDAD INTELECTUAL 🚨</div>';
+        });
+        throw new Error("Ejecución detenida: Violación de Propiedad Intelectual.");
+    }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Navbar Scroll Effect
