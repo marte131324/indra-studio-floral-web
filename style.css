@@ -89,9 +89,10 @@ p {
     font-weight: 500;
     text-decoration: none;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .btn-primary {
@@ -101,13 +102,15 @@ p {
 
 .btn-primary:hover {
     background-color: #555f4a;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(104, 115, 89, 0.35);
 }
 
 .btn-outline {
     background: transparent;
-    border: 1px solid var(--primary-color);
+    border: 1.5px solid var(--primary-color);
     color: var(--primary-color);
+    box-shadow: none;
 }
 
 .btn-outline.light-outline {
@@ -116,11 +119,15 @@ p {
 }
 
 .btn-outline:hover {
-    background-color: rgba(104, 115, 89, 0.05);
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: 0 6px 20px rgba(104, 115, 89, 0.25);
+    transform: translateY(-2px);
 }
 
 .btn-outline.light-outline:hover {
-    background-color: rgba(181, 155, 141, 0.1);
+    background-color: rgba(181, 155, 141, 0.2);
+    transform: translateY(-2px);
 }
 
 /* Navigation */
@@ -188,9 +195,10 @@ p {
 }
 
 .btn-book {
-    border: 1px solid var(--bg-white);
+    border: 1.5px solid var(--bg-white);
     padding: 10px 24px;
     border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 
 .navbar.scrolled .btn-book {
@@ -285,7 +293,7 @@ p {
 
 .split-image {
     position: relative;
-    border-radius: 4px;
+    border-radius: 12px;
     overflow: hidden;
     box-shadow: var(--shadow-main);
 }
@@ -347,9 +355,9 @@ p {
 
 .service-card {
     background: var(--bg-white);
-    border-radius: 4px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -411,7 +419,8 @@ p {
 
 .gallery-item-web {
     overflow: hidden;
-    border-radius: 4px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 .gallery-item-web img {
