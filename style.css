@@ -297,20 +297,20 @@ p {
 }
 
 .vcard-cta {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    background: var(--bg-white);
-    padding: 30px;
-    box-shadow: var(--shadow-main);
-    border-left: 4px solid var(--primary-color);
+    margin-top: 20px;
+    text-align: center;
+    padding: 16px 20px;
+    background: rgba(104, 115, 89, 0.06);
+    border-radius: 8px;
+    border: 1px solid rgba(104, 115, 89, 0.12);
 }
 
 .vcard-cta p {
     font-family: var(--font-heading);
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 10px;
     font-style: italic;
+    color: var(--text-muted);
 }
 
 /* Parallax Banner */
@@ -340,7 +340,7 @@ p {
 /* Services Grid */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin-top: 50px;
 }
@@ -545,6 +545,7 @@ p {
 .delay-1 { transition-delay: 0.2s; }
 .delay-2 { transition-delay: 0.4s; }
 .delay-3 { transition-delay: 0.6s; }
+.delay-4 { transition-delay: 0.8s; }
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
@@ -554,11 +555,7 @@ p {
     }
     
     .vcard-cta {
-        position: static;
-        margin-top: 20px;
         text-align: center;
-        border-left: none;
-        border-top: 4px solid var(--primary-color);
     }
     
     .services-grid, .gallery-grid {

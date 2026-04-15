@@ -64,8 +64,9 @@
     }
     </style>
     <div id="global-treze-splash">
-        <div class="spinner-treze"></div>
-        <p style="color:#FFF; font-family:sans-serif; font-size:12px; letter-spacing:2px; text-transform:uppercase;">Cargando Ambiente</p>
+        <img src="Assets/Logo.jpg" alt="Indra Studio Floral" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.3);">
+        <p style="color: #B59B8D; font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; letter-spacing: 3px; margin-bottom: 6px;">Indra Studio Floral</p>
+        <p style="color: #666; font-family: sans-serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase;">Cargando Experiencia</p>
         <!-- TREZE LABS CO-BRANDING SPLASH -->
         <a href="https://wa.me/522214092478?text=Hola%20Treze%20Labs%2C%20me%20gustar%C3%ADa%20solicitar%20el%20desarrollo%20de%20un%20sistema%20profesional." target="_blank" style="position: absolute; bottom: 60px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; opacity: 0; animation: fadeInTreze 1.5s ease 0.5s forwards; text-decoration: none; -webkit-tap-highlight-color: transparent; outline: none; border: none; z-index: 9999999;">
             <p style="color: #64748b; font-size: 11px; font-family: 'Inter', sans-serif; letter-spacing: 2px; text-transform: uppercase; margin: 0;">Powered by</p>
@@ -136,11 +137,12 @@
             </div>
             <div class="split-image fade-up">
                 <img src="Assets/INDRA%20FOTOS/RAMOS33.jpeg" alt="Nosotros Indra Studio">
-                <!-- VCard CTA (Conexión entre proyectos) -->
-                <div class="vcard-cta">
-                    <p>Guarda nuestro <br>contacto directo</p>
-                    <a href="https://indra-studio-floral.vercel.app" target="_blank" class="btn btn-outline"><i class="fa-solid fa-address-card"></i> Ver VCard</a>
-                </div>
+            </div>
+            
+            <!-- VCard CTA (debajo de la imagen, sin invadir) -->
+            <div class="vcard-cta fade-in" style="grid-column: span 2;">
+                <p><i class="fa-solid fa-address-card" style="margin-right: 6px;"></i> Guarda nuestro contacto directo en tu celular</p>
+                <a href="https://indra-studio-floral.vercel.app" target="_blank" class="btn btn-outline" style="padding: 10px 28px;"><i class="fa-solid fa-mobile-screen"></i> Ver VCard Móvil</a>
             </div>
         </div>
     </section>
@@ -167,7 +169,7 @@
                     <div class="card-img" style="background-image: url('Assets/INDRA%20FOTOS/RAMOS31.jpeg');"></div>
                     <div class="card-content">
                         <h3>Eventos & Celebraciones</h3>
-                        <p>Añadimos un toque floral a tus celebraciones para convertirlas en experiencias inolvidables. Diseño meticuloso y creatividad botánica para cada ocasión especial.</p>
+                        <p>Añadimos un toque floral a tus celebraciones para convertirlas en experiencias inolvidables.</p>
                         <a href="#contacto" class="btn btn-link">Cotizar <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -176,7 +178,7 @@
                     <div class="card-img" style="background-image: url('Assets/INDRA%20FOTOS/NOVIOS_RAMO.jpeg');"></div>
                     <div class="card-content">
                         <h3>Bodas & Compromisos</h3>
-                        <p>Creamos momentos mágicos. Desde ramos de novia impresionantes hasta decoraciones completas para el día más especial de tu vida.</p>
+                        <p>Ramos de novia impresionantes y decoraciones completas para el día más especial de tu vida.</p>
                         <a href="#contacto" class="btn btn-link">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -185,20 +187,43 @@
                     <div class="card-img" style="background-image: url('Assets/INDRA%20FOTOS/RAMOS21.jpeg');"></div>
                     <div class="card-content">
                         <h3>Regalos & Arreglos de Autor</h3>
-                        <p>Arreglos conceptuales perfectos para aniversarios, cumpleaños o simplemente para recordar a alguien lo especial que es.</p>
+                        <p>Arreglos conceptuales perfectos para aniversarios, cumpleaños o para recordar a alguien especial.</p>
                         <a href="#contacto" class="btn btn-link">Ordenar <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="service-card fade-up delay-4">
-                    <div class="card-img" style="background-image: url('Assets/INDRA%20FOTOS/RAMOS37.jpeg');"></div>
-                    <div class="card-content">
-                        <h3>Suscripción Floral</h3>
-                        <p>Flores frescas cada mes directo a tu hogar o negocio. Tu espacio siempre vivo, sin esfuerzo. Elige tu plan y nosotros nos encargamos.</p>
-                        <a href="#contacto" class="btn btn-link">Suscribirme <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
+    <!-- SUSCRIPCIÓN FLORAL - Sección Premium Destacada -->
+    <section class="parallax-banner" style="background-image: url('Assets/INDRA%20FOTOS/RAMOS37.jpeg');">
+        <div class="parallax-overlay" style="background: rgba(26, 31, 26, 0.75);"></div>
+        <div class="container text-center" style="position: relative; z-index: 2;">
+            <div style="display: inline-block; background: rgba(181,155,141,0.2); padding: 6px 18px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #B59B8D; margin-bottom: 20px; border: 1px solid rgba(181,155,141,0.3);">
+                <i class="fa-solid fa-rotate"></i> Servicio Recurrente
+            </div>
+            <h2 style="color: white; font-size: 3rem; margin-bottom: 10px;">Flores Frescas Cada Mes</h2>
+            <p style="color: rgba(255,255,255,0.8); font-family: var(--font-heading); font-size: 1.2rem; font-style: italic; max-width: 600px; margin: 0 auto 40px;">Tu espacio siempre vivo, sin esfuerzo. Suscríbete y recibe arreglos florales curados a tu puerta.</p>
+            
+            <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-bottom: 40px;">
+                <div style="background: rgba(255,255,255,0.08); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 25px 30px; min-width: 180px;">
+                    <div style="font-size: 2rem; margin-bottom: 8px;">🌿</div>
+                    <h4 style="color: white; font-size: 1.1rem; margin-bottom: 4px;">Elige tu Estilo</h4>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.8rem; margin: 0;">Clásico, silvestre o de temporada</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 25px 30px; min-width: 180px;">
+                    <div style="font-size: 2rem; margin-bottom: 8px;">📦</div>
+                    <h4 style="color: white; font-size: 1.1rem; margin-bottom: 4px;">Recibe en tu Puerta</h4>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.8rem; margin: 0;">Entrega puntual cada mes</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 25px 30px; min-width: 180px;">
+                    <div style="font-size: 2rem; margin-bottom: 8px;">✨</div>
+                    <h4 style="color: white; font-size: 1.1rem; margin-bottom: 4px;">Disfruta la Magia</h4>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 0.8rem; margin: 0;">Un espacio que siempre inspira</p>
                 </div>
             </div>
+            
+            <a href="https://wa.me/522282393575?text=Hola%2C%20me%20interesa%20la%20suscripci%C3%B3n%20floral%20mensual" target="_blank" class="btn btn-primary" style="font-size: 0.9rem; padding: 16px 50px;"><i class="fa-brands fa-whatsapp" style="margin-right: 8px;"></i> Quiero Suscribirme</a>
         </div>
     </section>
 
