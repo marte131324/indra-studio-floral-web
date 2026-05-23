@@ -617,15 +617,36 @@ p {
     .hamburger.active .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 }
 
-/* Cafe Section & Slider Styles */
-.cafe-section {
-    padding: 100px 0;
+/* Cafe Section Premium Card Wrapper */
+.cafe-card-wrapper {
+    background: var(--bg-white);
+    border-radius: 24px;
+    padding: 60px 50px;
+    box-shadow: 0 15px 45px rgba(44, 53, 45, 0.04), 0 4px 15px rgba(44, 53, 45, 0.02);
+    border: 1px solid rgba(44, 53, 45, 0.05);
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.cafe-badge {
+    display: inline-block;
+    background: rgba(104, 115, 89, 0.08);
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border: 1px solid rgba(104, 115, 89, 0.12);
 }
 
 .web-cafe-slider-container {
     position: relative;
     width: 100%;
-    margin-top: 20px;
     overflow: hidden;
 }
 
@@ -645,14 +666,14 @@ p {
 }
 
 .web-cafe-slide {
-    flex: 0 0 65%;
+    flex: 0 0 75%;
     scroll-snap-align: start;
-    border-radius: 12px;
+    border-radius: 16px;
     overflow: hidden;
     aspect-ratio: 4/5;
-    box-shadow: var(--shadow-main);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease;
 }
 
 .web-cafe-slide img {
@@ -660,15 +681,33 @@ p {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.6s ease;
 }
 
 .web-cafe-slide:hover {
-    transform: scale(1.02);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(44, 53, 45, 0.15);
+}
+
+.web-cafe-slide:hover img {
+    transform: scale(1.03);
 }
 
 @media (min-width: 900px) {
     .web-cafe-slide {
-        flex: 0 0 45%; /* En desktop se ve más compacto */
+        flex: 0 0 65%;
+    }
+}
+
+@media (max-width: 900px) {
+    .cafe-card-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 25px;
+        border-radius: 20px;
+    }
+    .web-cafe-slide {
+        flex: 0 0 80%;
     }
 }
 
