@@ -121,4 +121,14 @@ document.addEventListener('DOMContentLoaded', () => {
             contactForm.reset();
         });
     }
+
+    // 6. Expand Floral Gallery on Mobile
+    const btnLoadMore = document.getElementById('btn-load-more');
+    const floralGallery = document.getElementById('floral-gallery');
+    if (btnLoadMore && floralGallery) {
+        btnLoadMore.addEventListener('click', () => {
+            floralGallery.classList.add('show-all');
+            document.getElementById('btn-load-more-container').style.display = 'none';
+        });
+    }
 });
