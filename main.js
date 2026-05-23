@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const message = document.getElementById('message').value;
 
             const text = `¡Hola Indra Studio Floral! Vengo de su página Web. 🌿\n\n*Nombre:* ${name}\n*Interés:* ${topic}\n*Mensaje:* ${message}\n*Contacto:* ${email}`;
-            const waUrl = `https://wa.me/522282393575?text=${encodeURIComponent(text)}`;
+            const waUrl = `https://wa.me/522293706307?text=${encodeURIComponent(text)}`;
             
             window.open(waUrl, '_blank');
             contactForm.reset();
